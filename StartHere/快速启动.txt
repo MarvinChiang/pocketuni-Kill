@@ -1,0 +1,9 @@
+在setting.properties配置文件修改以下选项
+Student_ID=
+Password=
+activityID_1=
+schoolName_for_short=
+school_Id=
+
+CMD
+java -jar 完整路径\PUSeckill-21.4-jar-with-dependencies.jar即可
