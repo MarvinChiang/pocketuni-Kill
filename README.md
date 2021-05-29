@@ -1,17 +1,16 @@
 # PU口袋校园活动定时报名
 
-**由于多线程自动化程序过于暴力从未失误,由此影响重要学分甚至评优评先 改变人生轨迹的,找使用者负责**
+**由于本多线程自动化程序过于暴力从未失误,由此影响重要学分甚至评优评先 改变人生轨迹的,找使用者负责**
 基本不再维护了,登录流程经常改,以后自己复制cookies吧
 *有投诉随时跑路*
-<img src="..\pic\P1.png" alt="P1" style="zoom:61%;" />
+<img src="./pic/P1.png" alt="P1" style="zoom:45%;" />
 
 ### 准备工作
 
 - 电脑端浏览器(Edge Chrome Firefox)
-- APP客户端
-- JDK1.8   ~~使用java完全是为了提高运行门槛~~
+- JDK1.8
 - 记得账号密码或会复制cookies
-- 会用记事本修改.properties文件
+- 会用记事本修改.properties配置文件
 
 ### 完成网页登录
 
@@ -31,14 +30,13 @@
 
 ### 获取学校的主机名 和 学校编号(必须)
 
-- 使用[电脑网页版PU口袋校园](https://www.pocketuni.net/index.php?app=home&mod=Public&act=login) 首先完成一次登录
+- 使用[电脑网页版PU口袋校园](https://www.pocketuni.net/index.php?app=home&mod=Public&act=login) 首先完成一次登录(扫码登录也可)
   **记录下跳转后的网址**
 
   > 例如 ***https://jlnku.pocketuni.net/***
   >
-  >  jlnku是主机名 pocketuni.net是二级域名
-- 从School id list.txt或者 *手动从登录界面的前端中找*
-- 好了 知道自己学校的主机名和学校编号 -(17495-吉林农业科技学院)
+  >  jlnku 是主机名 pocketuni.net是二级域名
+- 从School id list.txt找到( 17495-吉林农业**学院 ) 或者 *手动从登录界面的前端中找*
 - 修改配置文件 <br>
   schoolName_for_short=jlnku <br>
   school_Id=17495
@@ -46,6 +44,7 @@
 ### 获得活动编号
 
 - 点入一个活动
+  
   > 例如https://jlnku.pocketuni.net/index.php?app=event&mod=Front&act=index&id=2721774
 - activityID_1为 2721774 ~~uid没用~~
 - **一人同时**需要两个活动就把activityID_2设置为0以外的值
@@ -54,8 +53,8 @@
 
 ### 快速启动
 
-把配置好的setting.properties放到PUSeckill-*.jar包同路径下<br>
-**java -jar (完整路径)/PUSeckill-21.4-jar-with-dependencies.jar**
+把配置好的 setting.properties 放到 PUSeckill-*.jar 包同路径下<br>
+>  **java -jar (完整路径)\PUSeckill-21.4-jar-with-dependencies.jar**
 
 ### 提示
 
@@ -66,9 +65,11 @@
 - 定时启动 yyyy-MM-dd HH:mm:ss 例如2020-12-19 12:59:50 24小时制
 - 前端可能会改,登录失败先用cookies
 - maven package 打包成jar
-- **java -jar 完整路径./PUSeckill-21.4-jar-with-dependencies.jar** 可以部署到服务器上
-- <img src="pic/P1.png" alt="P1" style="zoom:45%;" /> <br>
-- <img src="pic/P2.png" alt="P2" style="zoom:45%;" /> <br>
-- <img src="pic/P3.png" alt="P3" style="zoom:31%;" />
+- **java -jar PUSeckill-21.4-jar-with-dependencies.jar** 可以部署到Linux服务器上 不要忘记附带配置文件
+
+  <img src="./pic/P2.png" alt="P2" style="zoom:45%;" />
+  <img src="./pic/P3.png" alt="P3" style="zoom:35%;" />
+
 ### 鸣谢
+
 多位神秘校友的大力支持
