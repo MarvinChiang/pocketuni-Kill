@@ -3,7 +3,7 @@
 **由于本多线程自动化程序过于暴力从未失误,由此影响重要学分甚至评优评先 改变人生轨迹的,找使用者负责**
 基本不再维护了,登录流程经常改,以后自己复制cookies吧
 *有投诉随时跑路*
-<img src="./pic/P1.png" alt="p1" style="zoom:45%;" />
+<img src="pic/1.png" alt="1" style="zoom:45%;" />
 
 ### 准备工作
 
@@ -67,8 +67,8 @@
 - maven package 打包成jar
 - **java -jar PUSeckill-21.4-jar-with-dependencies.jar** 可以部署到Linux服务器上 不要忘记附带配置文件
 
-  <img src="./pic/p2.png" alt="P2" style="zoom:45%;" />
-  <img src="./pic/p3.png" alt="P3" style="zoom:35%;" />
+  <img src="pic/2.png" alt="P2" style="zoom:45%;" />
+  <img src="pic/3.png" alt="P3" style="zoom:35%;" />
 
 ### 鸣谢
 
