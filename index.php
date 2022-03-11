@@ -1,4 +1,5 @@
 <?php
+//请求示例：https://github.com/dysf888/pocketuni-Kill/edit/master/index.php?time=yyyyMMdd HHmmss&id=活动id
 $outurl = urldecode( 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING']);
 $arr = parse_url($outurl);
 $arr_query = convertUrlQuery($arr['query']);
